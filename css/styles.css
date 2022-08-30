@@ -1,0 +1,23 @@
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  display: inline-block;
+  overflow: auto;
+  height: 100%;
+  right: 0px;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+}
+
+#opening {
+  padding-top: 50px;
+}
