@@ -1,13 +1,14 @@
-*{
+ *{
   font-family: Roboto;
   font-weight: 100;
+  font-size: 20px;
 }
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 55px;
+  height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -17,8 +18,8 @@ header {
 }
 
 header img{
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   padding-left: 10px;
 }
 
@@ -46,19 +47,152 @@ nav li a{
 
 }
 
+#background{
+  width: 100%;
+  background: linear-gradient(to right, #5D4EBF, #5F5BD9, #5F5BD9, #5576D9);;
+}
+
+section{
+  width: 100%;
+}
+
+.container{
+  /* background-color: brown; */
+  width: 90vw;
+  margin: 0 auto;
+  padding: 10% 0;
+  border-bottom: 1px solid #000;
+}
 
 #opening{
   position: relative;
   top: 0;
   left: 0;
   height: 200vh;
-  min-width: 400px;
+  min-width: 270px;
   background-image: url('../images/fondo_inicio.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-attachment: fixed;
   background-size: cover;
 }
+
+.container-top, .container-bottom{
+  width: 90vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+#opening h1{
+  padding: 30vh 0 0 10vw;
+}
+
+#opening h2{
+  padding: 30vh 0 0 10vw;
+  max-width: 50vw;
+} 
+
+#about_us .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#about_us .text{
+  position: relative;
+  width: 40%;
+  min-width: 250px;
+}
+
+#about_us .img{
+  width: 40%;
+  height: 40%;
+  min-width: 250px;
+}
+
+#about_us p{
+  color: #fff;
+  text-align: justify;
+  line-height : 1.2;
+  font-style: italic;
+  width: 90%;
+}
+
+#about_us img{
+  width: 100%;
+}
+
+.Carousel{
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button-left, #button-right{
+  height: 90%;
+  background-color: #DBD8EC;
+  border: transparent;
+  border-radius: 20px;
+}
+
+#button-left img, #button-right img{
+  pointer-events: none;
+}
+
+.Carousel ul{
+  list-style: none;
+  width: 90%;
+  height: 100%;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.Carousel li{
+  width: 25%;
+  min-width: 250px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 20px;
+  border: transparent;
+  background-color: #fff;
+}
+
+.Carousel li .image{
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.Carousel li .image img{
+  width: 100%;
+  pointer-events: none;
+}
+
+.Carousel li h3{
+  text-align: center;
+  font-weight: bold;
+  color: #343A40;
+  font-size: 28px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 h1, h2{
   font-family: Hind;
@@ -69,12 +203,105 @@ h1, h2{
   text-shadow: #000 0.1em 0.1em 0.3em;
 }
 
-#opening h1{
-  padding: 30vh 0 0 15vw;
+
+/*
+
+
+#about_us{
+  padding: 120px 0;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+
+
+   flex-direction: row;
+  flex-wrap: wrap; 
 }
 
-#opening h2{
-  padding: 65vh 0 0 15vw;
-  margin: 0;
-  max-width: 50vw;
+#about_us img{
+  width: calc( 100vw - 500px);
 }
+
+
+.texto p{
+  width: 500px;
+}
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* :root { 
+  --largo: 104px; 
+  --rotacion: 45deg;
+  --width: 210px;
+}
+
+#contenedor{
+  display: flex;
+  padding: 90px;
+}
+
+#trapecio-left::before{
+
+  content: "";
+  display: block;
+  height: var(--width);
+  border-right: var(--largo) solid red;
+  border-top: var(--largo) solid transparent;
+  border-bottom: var(--largo) solid red;
+
+  margin-right: 104px;
+
+}
+
+#trapecio-right::before{
+  content: "";
+  display: block;
+  height: var(--width);
+  border-left: var(--largo) solid blue;
+  border-top: var(--largo) solid transparent;
+  border-bottom: var(--largo) solid blue;
+  margin-left: 104px;
+}
+
+#trapecio-right::after, #trapecio-left::after{
+  content: "";
+  display: block;
+  height: calc( var(--width) + var(--largo) * 2 );
+}
+
+#trapecio-left{
+  transform: translate(104px, 0) rotate(var(--rotacion));
+}
+
+#trapecio-right{
+  transform: translate(-104px, 0) rotate( calc( var(--rotacion)* -1 ) );
+} */
