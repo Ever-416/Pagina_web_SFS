@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <title>SFS Abogados</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="author" content="Ever Salgado" />
-    <meta
-      name="descripcion"
-      content="brindar asesoría en asuntos laborales y familiares"
-    />
 
-    <link rel="stylesheet" href="css/styles.css" />
+<head>
+  <title>SFS Abogados</title>
+  <meta charset="UTF-8" />
+  <!-- <meta name="viewport" content="width=device-width" /> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="author" content="Ever Salgado" />
+  <meta name="descripcion" content="brindar asesoría en asuntos laborales y familiares" />
 
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap" rel="stylesheet">
-    
-  </head>
-  <body>
-    <header>
-      <img src="images/icono.svg" alt="">
-      <nav>
-        <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Quienes somos</a></li>
-          <li><a href="">Servicios</a></li>
-          <li><a href="">Contáctenos</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <article id="background">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://kit.fontawesome.com/6220f9fd03.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+
+
+</head>
+
+<body>
+
+  <header>
+    <img src="images/icono.svg" alt="">
+    <nav>
+      <ul>
+        <li><a href="#opening">Inicio</a></li>
+        <li><a href="#about_us">Quienes somos</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#contact">Contáctenos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<article id="background">
       <section id="opening" >
 
         <div class="container-top">
@@ -65,109 +70,111 @@
 
       <section id="services">
         <div class="container">
-
+  
           <h2>Lo asesoramos en:</h2>
-
-          <div class="Carousel">
-            <button id="button-left" aria-label="arrow-left">
-              <img src="images/arrow_left.svg" alt="">
-            </button>
-            <ul>
-              <li id="item-1">
+  
+          <div class="container-carousel">
+            <button id="button-left" aria-label="arrow-left"
+            type="button"><i class="fa-solid fa-chevron-up"></i></button>
+      
+            <ul id="carousel">
+              <li class="item">
                 <div class="image"><img src="images/Imagen_asuntosLaborales.jpg" alt=""></div>
                 <div><h3>Asuntos laborales</h3></div>
               </li>
-  
-              <li id="item-2">
+      
+              <li class="item">
                 <div class="image"><img src="images/Imagen_asuntosFamiliares.jpg" alt=""></div>
                 <div><h3>Asuntos de familia</h3></div>
               </li>
-  
-              <li id="item-3">
+      
+              <li class="item">
                 <div class="image"><img src="images/Imagen_comparendos.jpg" alt=""></div>
                 <div><h3>Comparendos</h3></div>
               </li>
-  
-              <li id="item-4">
+      
+              <li class="item">
                 <div class="image"><img src="images/Imagen_dataCredito.jpg" alt=""></div>
                 <div><h3>Datacrédito</h3></div>
               </li>
-  
-              <li id="item-5">
+      
+              <li class="item">
                 <div class="image"><img src="images/ImagenImpuestoPredial.jpg" alt=""></div>
                 <div><h3>Impuestos predial</h3></div>
               </li>
             </ul>
-            <button id="button-right" aria-label="arrow-right">
-              <img src="images/arrow_right.svg" alt="">
-            </button>
-          </div>
-
-
-
-
+            <button id="button-right" aria-label="arrow-right"          
+            type="button"><i class="fa-solid fa-chevron-up"></i></button>
+          </div> 
+  
         </div>
-
+  
       </section>
 
-      <!--
       <section id="contact">
 
         <div class="container">
-          <div class="title">
+          <div class="container-title">
             <h2>Contacto</h2>
           </div>
-          <div class="contents">
-            <div id="form">
-              <input type="text">
-              <input type="text">
-              <input type="email">
-              <input type="tel">
-              <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-              <h1>NO SOY UN ROBOT</h1>
-              <button type="submit">Enviar</button>
-            </div>
-            <div id="information">
-              <div class="direccion">
-                <img src="images/icono_ubicacion.svg" alt="">
-                <p>Calle 51 N° 13ª1-26, Soledad 2000</p>
+          <div class="background">
+            <div class="container-content">
+              <div class="form-container">
+                <form action="">
+                  <input type="text" class="input" id="input-name" placeholder="Nombre" required>
+    
+                  <input type="email" class="input" id="input-email" placeholder="Email" required>
+    
+                  <input type="tel" class="input" id="input-tel" placeholder="Teléfono" required>
+    
+                  <textarea class="input menssage" id="input-menssage" rows="3" placeholder="Escriba su mensaje" required></textarea>
+    
+                  <div class="recaptcha">
+                    <div class="g-recaptcha" data-sitekey="6LcDTtchAAAAAFOAiyfl-3JlMZ9K6RgleTMl3UYV"></div>
+                  </div>
+    
+                  <div>
+                    <button id="sendEmail" type="submit">Enviar</button>
+                  </div>
+    
+                </form>
+    
               </div>
-              <div class="ubicacion">
-                <img src="images/maps.png" alt="">
+    
+              <div class="information-container">
+                <div class="grid-container">
+                  <div class="item">
+                    <i class="ico fa-solid fa-location-dot"></i>
+                    <p>Calle 51 N° 13ª1-26, Soledad 2000</p>
+                  </div>
+                  <div class="item location">
+                    <img src="images/maps.png" alt="">
+                  </div>
+                  <div class="item">
+                    <i class="ico fa-brands fa-whatsapp"></i>
+                    <p><a href="">3004992719</a> | <a href="">3135934461</a> | <a href="">3005531889</a></p>
+                  </div>
+                  <div class="item">
+                    <i class="ico fa-regular fa-envelope"></i>
+                    <a href="mailto:sfsabogados2020@gmail.com?subject=Asesoria&body=Escriba sumensaje">sfsabogados2020@gmail.com</a>
+                  </div>
+                </div>
               </div>
-              <div class="whatsapp">
-                <img src="images/icono_whatsapp.svg" alt="">
-                <p><a href="">3004992719</a> | <a href="">3135934461</a> | <a href="">3005531889</a></p>
-              </div>
-              <div class="email">
-                <img src="images/icono_correo.svg" alt="">
-                <a href="mailto:sfsabogados2020@gmail.com">sfsabogados2020@gmail.com</a>
-              </div>
+    
             </div>
           </div>
         </div>
+      </section>    
 
-      </section>
     </article>
-    <footer>
+  <!-- <footer>
       <p>Desarrollada por </p>
       <a href="https://github.com/Ever-416" target="     ">Ever Salgado</a>
     </footer> -->
 
-    </article>    
 
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="images/images.js"></script>
-  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>
-
-
-
-
-
-
-
-  <!-- <div id="contenedor">
-      <div id="trapecio-left"></div>
-      <div id="trapecio-right"></div>
-    </div> -->
