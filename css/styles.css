@@ -10,6 +10,15 @@
    font-size: var(--font-size);
  }
 
+ h1, h2 {
+  font-family: Hind;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: #000 0.1em 0.1em 0.3em;
+}
+
  header {
    position: fixed;
    top: 0;
@@ -362,6 +371,13 @@
   cursor: pointer;
  }
 
+ #formWarning{
+  color: #FF3737;
+  font-size: .8em;
+  text-align: center;
+  margin: 0;
+ }
+
  #contact .information-container{
   flex: 1;
   min-width: 250px;
@@ -403,11 +419,80 @@
  }
 
 
- h1, h2 {
-  font-family: Hind;
-  font-weight: 900;
-  font-style: italic;
-  font-size: 2.5em;
-  color: #fff;
-  text-shadow: #000 0.1em 0.1em 0.3em;
+/* style popup */
+
+#overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  visibility: hidden;
 }
+
+#overlay.active{
+  visibility: visible;
+}
+
+#overlay.active .popup{ opacity: 1; transform: scale(1);}
+
+#overlay .popup{
+  width: 80vw;
+  max-width: 14em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .4);
+  padding: .5em;
+  background-color: #fff;
+  opacity: 0;
+  transform: scale(.8);
+  transition: .3s ease all;
+}
+
+#overlay .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#overlay .item p{
+  font-size: .8em;
+  color: #000;
+  text-align: center;
+}
+
+#overlay .spin{
+  border: 3px solid hsla(185, 100%, 62%, 0.2);
+  border-top-color: #20C997;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  animation: spin 1.5s linear infinite; 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+} 
+
+#overlay .item button{
+  width: 2em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  font-size: .8em;
+  background-color: #20C997;
+  color: #fff;
+  border: none;
+  padding: .7em 0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#overlay .item:nth-of-type(3) button{background-color: rgb(237, 67, 67);}
